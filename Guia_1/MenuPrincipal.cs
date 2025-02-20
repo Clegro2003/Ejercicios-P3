@@ -55,7 +55,7 @@ namespace Guia_1
             Ejercicio_2 ejercicio_2 = new Ejercicio_2();
             ejercicio_2.CapturarDatos();
             var msj = ejercicio_2.CalcularPulsaciones(persona2);
-            Console.WriteLine($"Tuvo {msj.ToString("0,0")} pulsaciones");
+            Console.WriteLine($"Tuvo {msj} pulsaciones");
             Console.ReadKey();
         }
     }
