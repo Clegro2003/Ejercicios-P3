@@ -8,22 +8,23 @@ namespace Guia_1
 {
     public class MenuEjercicio1
     {
+        Ejercicio_1 ejercicio_1 = new Ejercicio_1();
         public void Menu1()
         {
-            Ejercicio_1 ejercicio_1 = new Ejercicio_1();
+            Persona persona = new Persona();
             int op;
             do
             {
                 Console.Clear();
                 Console.SetCursorPosition(10, 2); Console.Write("G E S T I O N  D E  N O T A S");
                 Console.SetCursorPosition(12, 4); Console.Write("1. CAPTURAR NOTAS");
-                Console.SetCursorPosition(12, 5); Console.Write("2. INFORME DE NOTAS");
-                Console.SetCursorPosition(12, 7); Console.Write("3. ELIMINAR ESTUDIANTE");
-                Console.SetCursorPosition(12, 7); Console.Write("4. ACTUALIZAR INFORMACION DE ESTUDIANTE ");
-                Console.SetCursorPosition(12, 10); Console.Write("9. VOLVER AL MENU PRINCIPAL ");
+                Console.SetCursorPosition(12, 6); Console.Write("2. INFORME DE NOTAS");
+                Console.SetCursorPosition(12, 8); Console.Write("3. ELIMINAR ESTUDIANTE");
+                Console.SetCursorPosition(12, 10); Console.Write("4. ACTUALIZAR INFORMACION DE ESTUDIANTE ");
+                Console.SetCursorPosition(12, 12); Console.Write("9. VOLVER AL MENU PRINCIPAL ");
 
-                Console.SetCursorPosition(12, 19); Console.Write("Digite una opcion: ");
-                Console.SetCursorPosition(32, 19); op = int.Parse(Console.ReadLine());
+                Console.SetCursorPosition(12, 15); Console.Write("Digite una opcion: ");
+                Console.SetCursorPosition(32, 15); op = int.Parse(Console.ReadLine());
 
 
                 switch (op)
@@ -35,20 +36,31 @@ namespace Guia_1
                         ejercicio_1.ImprimirResultado();
                         break;
                     case 3:
-
+                        Eliminar();
                         break;
                     case 4:
 
                         break;
                     case 9:
                         Console.Clear();
-                        Console.WriteLine("gracias por usar productos johnp");
-                        Console.ReadKey();
                         break;
                 }
 
             } while (op != 9);
 
+        }
+
+        public void Eliminar()
+        {
+            string nombre;
+            Persona persona = new Persona();
+            Console.WriteLine("Digite nombre: ");
+            nombre = Console.ReadLine();
+
+            persona = ejercicio_1.BuscarPersona(nombre);
+            var msj = ejercicio_1.Eliminar(persona);
+            Console.WriteLine(msj);
+            Console.ReadKey();
         }
     }
 }

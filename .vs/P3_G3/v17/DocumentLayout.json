@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|solutionrelative:guia_1\\menuejercicio1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|c:\\users\\carlo\\onedrive\\desktop\\2025-1\\p3\\corte 1\\p3_g3\\p3_g3\\guia_1\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|C:\\Users\\carlo\\OneDrive\\Desktop\\2025-1\\P3\\CORTE 1\\P3_G3\\P3_G3\\guia_1\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|solutionrelative:guia_1\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|c:\\users\\carlo\\onedrive\\desktop\\2025-1\\p3\\corte 1\\p3_g3\\p3_g3\\guia_1\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|C:\\Users\\carlo\\OneDrive\\Desktop\\2025-1\\P3\\CORTE 1\\P3_G3\\P3_G3\\guia_1\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E7CAA4B-0780-48E4-A6CC-261534ABDAC0}|Guia_1\\Guia_1.csproj|solutionrelative:guia_1\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Guia_1\\MenuEjercicio1.cs",
               "ToolTip": "C:\\Users\\carlo\\OneDrive\\Desktop\\2025-1\\P3\\CORTE 1\\P3_G3\\P3_G3\\Guia_1\\MenuEjercicio1.cs",
               "RelativeToolTip": "Guia_1\\MenuEjercicio1.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T01:19:55.787Z",
               "EditorCaption": ""
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "Guia_1\\Persona.cs",
               "ToolTip": "C:\\Users\\carlo\\OneDrive\\Desktop\\2025-1\\P3\\CORTE 1\\P3_G3\\P3_G3\\Guia_1\\Persona.cs",
               "RelativeToolTip": "Guia_1\\Persona.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T01:07:55.92Z",
               "EditorCaption": ""
@@ -76,8 +76,7 @@
               "RelativeToolTip": "Guia_1\\MenuPrincipal.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAABkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T20:37:58.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T20:37:58.033Z"
             },
             {
               "$type": "Document",
@@ -99,7 +98,7 @@
               "RelativeDocumentMoniker": "Guia_1\\Ejercicio_1.cs",
               "ToolTip": "C:\\Users\\carlo\\OneDrive\\Desktop\\2025-1\\P3\\CORTE 1\\P3_G3\\P3_G3\\Guia_1\\Ejercicio_1.cs*",
               "RelativeToolTip": "Guia_1\\Ejercicio_1.cs*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAwwDEAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwDIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T19:36:26.092Z",
               "EditorCaption": ""
@@ -114,8 +113,7 @@
               "RelativeToolTip": "Guia_1\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T19:33:36.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T19:33:36.711Z"
             }
           ]
         }

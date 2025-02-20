@@ -42,6 +42,38 @@ namespace Guia_1
 
         }
 
+        public string Eliminar(Persona persona)
+        {
+            try
+            {
+                if (persona != null)
+                {
+                    personas.Remove(persona);
+                    return "Estudiante eliminado";
+                }
+                return "Estudiante no existe";
+
+            }
+            catch (Exception e)
+            {
+                return $"{e.Message}";
+            }
+
+        }
+
+        public Persona BuscarPersona(string nombre)
+        {
+            foreach (var persona in personas)
+            {
+                if(persona.nombre == nombre)
+                {
+                    return persona;
+                }
+            }
+
+            return null;
+        }
+
         private float CalcularPromedio(Persona persona)
         {
             return persona.nota1 * PORC_NOTA1 + persona.nota2 * PORC_NOTA2 + persona.nota3 * PORC_NOTA3;
