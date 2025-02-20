@@ -39,7 +39,7 @@ namespace Guia_1
                         Eliminar();
                         break;
                     case 4:
-
+                        Actualizar();
                         break;
                     case 9:
                         Console.Clear();
@@ -52,6 +52,7 @@ namespace Guia_1
 
         public void Eliminar()
         {
+            Console.Clear();
             string nombre;
             Persona persona = new Persona();
             Console.WriteLine("Digite nombre: ");
@@ -59,6 +60,20 @@ namespace Guia_1
 
             persona = ejercicio_1.BuscarPersona(nombre);
             var msj = ejercicio_1.Eliminar(persona);
+            Console.WriteLine(msj);
+            Console.ReadKey();
+        }
+
+        public void Actualizar()
+        {
+            Console.Clear();
+            string nombre;
+            Persona persona = new Persona();
+            Console.WriteLine("Digite nombre: ");
+            nombre = Console.ReadLine();
+
+            persona = ejercicio_1.BuscarPersona(nombre);
+            var msj = ejercicio_1.Actualizar(persona);
             Console.WriteLine(msj);
             Console.ReadKey();
         }

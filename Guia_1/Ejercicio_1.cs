@@ -8,6 +8,11 @@ namespace Guia_1
 {
     public class Ejercicio_1
     {
+        /*
+          Capturar 3 notas, sacar el Promedio y determinar si el estudiante ganó o perdió la asignatura 
+        (Mayor o igual a 3 ganó en caso contrario Perdió)
+         */
+
         //constantes
         const float PORC_NOTA1 = 0.3F;
         const float PORC_NOTA2 = 0.3F;
@@ -61,6 +66,29 @@ namespace Guia_1
 
         }
 
+        public string Actualizar(Persona persona)
+        {
+            try
+            {
+                if (persona != null)
+                {
+                    Console.Write("NOTA 1: ");
+                    persona.nota1 = float.Parse(Console.ReadLine());
+                    Console.Write("NOTA 2: ");
+                    persona.nota2 = float.Parse(Console.ReadLine());
+                    Console.Write("NOTA 3: ");
+                    persona.nota3 = float.Parse(Console.ReadLine());
+                    return "Estudiante actualizado";
+                }
+
+                return "Estudiante no existe";
+            }
+            catch (Exception e)
+            {
+                return $"{e.Message}";
+            }
+        }
+
         public Persona BuscarPersona(string nombre)
         {
             foreach (var persona in personas)
@@ -97,10 +125,10 @@ namespace Guia_1
             foreach (Persona persona in personas)
             {
                 Console.SetCursorPosition(20,3 + i); Console.Write(persona.nombre);
-                Console.SetCursorPosition(32,3 + i); Console.Write(persona.nota1);
-                Console.SetCursorPosition(43,3 + i); Console.Write(persona.nota2);
-                Console.SetCursorPosition(54,3 + i); Console.Write(persona.nota3);
-                Console.SetCursorPosition(65,3 + i); Console.Write(CalcularPromedio(persona));
+                Console.SetCursorPosition(32,3 + i); Console.Write(persona.nota1.ToString("0.0"));
+                Console.SetCursorPosition(43,3 + i); Console.Write(persona.nota2.ToString("0.0"));
+                Console.SetCursorPosition(54,3 + i); Console.Write(persona.nota3.ToString("0.0"));
+                Console.SetCursorPosition(65,3 + i); Console.Write(CalcularPromedio(persona).ToString("0.0"));
                 i++;
             }
 

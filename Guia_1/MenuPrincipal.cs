@@ -17,14 +17,13 @@ namespace Guia_1
             {
                 Console.Clear();
                 Console.SetCursorPosition(10,2); Console.Write("M E N U   P R I N C I P A L");
-                Console.SetCursorPosition(12,4); Console.Write("1. Gestion de Notas");
-                Console.SetCursorPosition(12, 5); Console.Write("2. Calcular el número de pulsaciones ");
-                Console.SetCursorPosition(12, 7); Console.Write("3. información financiera ");
-                Console.SetCursorPosition(12, 10); Console.Write("9. Salir ");
+                Console.SetCursorPosition(12,4); Console.Write("1. GESTION DE NOTAS");
+                Console.SetCursorPosition(12, 5); Console.Write("2. CARLCULAR NUMERO DE PULSACIONES");
+                Console.SetCursorPosition(12, 7); Console.Write("3. INFORMACION FINANCIERA");
+                Console.SetCursorPosition(12, 10); Console.Write("9. SALIR ");
 
-                Console.SetCursorPosition(12, 19); Console.Write("digite una opcion: ");
+                Console.SetCursorPosition(12, 19); Console.Write("Digite una opcion: ");
                 Console.SetCursorPosition(32, 19); op = int.Parse(Console.ReadLine());
-
 
                 switch (op)
                 {
@@ -33,7 +32,7 @@ namespace Guia_1
                         menuEjecicio1.Menu1();
                         break;
                     case 2:
-                        Console.WriteLine("el code ej2");
+                        Ejercicio2();
                         break;
                     case 3:
                         Console.WriteLine("code eje3");
@@ -47,6 +46,17 @@ namespace Guia_1
 
             } while (op!=9);
 
+        }
+
+        public void Ejercicio2()
+        {
+            Console.Clear();
+            Persona2 persona2 = new Persona2();
+            Ejercicio_2 ejercicio_2 = new Ejercicio_2();
+            ejercicio_2.CapturarDatos();
+            var msj = ejercicio_2.CalcularPulsaciones(persona2);
+            Console.WriteLine($"Tuvo {msj.ToString("0,0")} pulsaciones");
+            Console.ReadKey();
         }
     }
 }
