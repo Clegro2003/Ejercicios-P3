@@ -15,7 +15,7 @@ namespace Guia_1
             int op;
             do
             {
-                 Console.Clear();
+                Console.Clear();
                 Console.SetCursorPosition(10,2); Console.Write("M E N U   P R I N C I P A L");
                 Console.SetCursorPosition(12,4); Console.Write("1. Gestion de Notas");
                 Console.SetCursorPosition(12, 5); Console.Write("2. Calcular el número de pulsaciones ");
@@ -29,11 +29,8 @@ namespace Guia_1
                 switch (op)
                 {
                     case 1:
-                        //MenuEjecicio1();
-                        Ejercicio_1 ejercicio_1 = new Ejercicio_1();
-                        ejercicio_1.CapturarNotas();
-                        ejercicio_1.ImprimirResultado();
-                        //Console.WriteLine( " aqui va el codigo del menu de ej1");
+                        MenuEjercicio1 menuEjecicio1 = new MenuEjercicio1();
+                        menuEjecicio1.Menu1();
                         break;
                     case 2:
                         Console.WriteLine("el code ej2");

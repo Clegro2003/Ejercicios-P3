@@ -14,46 +14,42 @@ namespace Guia_1
         const float PORC_NOTA3 = 0.4F;
 
         //variables
-        public string nombre;
-        public float nota1;
-        public float nota2;
-        public float nota3;
+        public List<Persona> personas = new List<Persona>();
 
         //funciones
         public void CapturarNotas()
         {
+            Persona persona = new Persona();
             Console.Clear();
             Console.WriteLine("SISTEMA DE GESTION DE NOTAS");
 
             Console.Write("Nombre Estudiante: ");
-            nombre = Console.ReadLine();
+            persona.nombre = Console.ReadLine();
 
             Console.Write("NOTA 1: ");
-            nota1 = float.Parse(Console.ReadLine());
+            persona.nota1 = float.Parse(Console.ReadLine());
 
             Console.Write ("NOTA 2: ");
-            nota2 = float.Parse(Console.ReadLine());
+            persona.nota2 = float.Parse(Console.ReadLine());
 
             Console.Write ("NOTA 3: ");
-            nota3 = float.Parse(Console.ReadLine());
+            persona.nota3 = float.Parse(Console.ReadLine());
 
             Console.WriteLine("datos cargados correctamente");
+
+            personas.Add(persona);
             Console.ReadKey();
 
         }
 
-        private float CalcularPromedio()
+        private float CalcularPromedio(Persona persona)
         {
-            //float promedio;
-            //promedio = nota1 * PORC_NOTA1 + nota2 * PORC_NOTA2 + nota3 * PORC_NOTA3;
-            //return promedio;
-
-            return nota1 * PORC_NOTA1 + nota2 * PORC_NOTA2 + nota3 * PORC_NOTA3;
+            return persona.nota1 * PORC_NOTA1 + persona.nota2 * PORC_NOTA2 + persona.nota3 * PORC_NOTA3;
         }
 
-        private string EstadoEstudiante()
+        private string EstadoEstudiante(Persona persona)
         {
-            if (CalcularPromedio()>=3)
+            if (CalcularPromedio(persona)>=3)
             {
                 return "Eres un Estudiante Feliz ...";
             }
@@ -63,20 +59,35 @@ namespace Guia_1
         public void ImprimirResultado()
         {
             Console.Clear();
-            Console.WriteLine("SISTEMA DE GESTION DE NOTAS");
-            Console.WriteLine("Nombre: " + nombre);
-            //Console.WriteLine(nombre);
-            Console.WriteLine($"Primer Parcial {nota1.ToString("0.0")}");
-            //Console.WriteLine(nota1);
-            Console.Write("Segundo Parcial ");
-            Console.WriteLine(nota2.ToString("0.0"));
-            Console.Write("Examen Final ");
-            Console.WriteLine(nota3.ToString("0.00"));
-            Console.Write("DEfinitiva ");
-            Console.WriteLine(CalcularPromedio().ToString("0.00"));
-            Console.WriteLine(EstadoEstudiante());
+            
+            Console.SetCursorPosition(20,2); Console.Write("NOMBRE     NOTA 1     NOTA 2     NOTA 3     DEFINITIVA");
+            int i = 0;
+            foreach (Persona persona in personas)
+            {
+                Console.SetCursorPosition(20,3 + i); Console.Write(persona.nombre);
+                Console.SetCursorPosition(32,3 + i); Console.Write(persona.nota1);
+                Console.SetCursorPosition(43,3 + i); Console.Write(persona.nota2);
+                Console.SetCursorPosition(54,3 + i); Console.Write(persona.nota3);
+                Console.SetCursorPosition(65,3 + i); Console.Write(CalcularPromedio(persona));
+                i++;
+            }
 
             Console.ReadKey();
         }
+    
+    
     }
 }
+
+            //Console.WriteLine("SISTEMA DE GESTION DE NOTAS");
+            //Console.WriteLine("Nombre: " + persona.nombre);
+            ////Console.WriteLine(nombre);
+            //Console.WriteLine($"Primer Parcial {persona.nota1.ToString("0.0")}");
+            ////Console.WriteLine(nota1);
+            //Console.Write("Segundo Parcial ");
+            //Console.WriteLine(persona.nota2.ToString("0.0"));
+            //Console.Write("Examen Final ");
+            //Console.WriteLine(persona.nota3.ToString("0.00"));
+            //Console.Write("DEfinitiva ");
+            //Console.WriteLine(CalcularPromedio().ToString("0.00"));
+            //Console.WriteLine(EstadoEstudiante());
